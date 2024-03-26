@@ -1,0 +1,42 @@
+{
+	"description": "The CodeIgniter framework",
+	"name": "codeigniter/framework",
+	"type": "project",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"slack": "https://codeigniterchat.slack.com",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"config": {
+		"platform-check": false
+	},
+	"require": {
+		"php": ">=7.4 || ^8.1",
+		"ext-json": "*",
+		"ext-curl": "*",
+		"ext-mbstring": "*",
+		"zendframework/zend-inputfilter": "*",
+		"yidas/codeigniter-psr4-autoload": "^2.0",
+		"halaxa/json-machine": "^1.1",
+		"sendgrid/sendgrid": "^8.0",
+		"mailchimp/marketing": "^3.0",
+		"elasticsearch/elasticsearch": "^7.0",
+		"stichoza/google-translate-php": "^5.1",
+		"stripe/stripe-php": "^13.5",
+		"google/cloud-storage": "^1.23"
+
+	},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	},
+	"autoload":{
+		"psr-4":{
+			"app\\":"application"
+		},
+		"classmap": ["system/"]
+
+	}
+}
